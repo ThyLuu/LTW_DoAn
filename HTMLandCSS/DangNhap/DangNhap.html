@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!-- Font chữ Roboto -->
+    <link rel="stylesheet" href="/image/user.jpg">
+    <link rel="stylesheet" href="/image/lock.jpg">
+    <link rel="stylesheet" href="DangNhap.css">
+    <title>Đăng nhập Bread Space</title>
+</head>
+<body>
+    <div class="background">
+        <div class="brand-background">
+            <h1 class="bread-space">Bread Space</h1>
+        </div>
+
+        <div class="info">
+            <!-- Log In -->
+            <div class="log-in">
+                Log In
+            </div>
+            <div class="welcome">
+                Welcom to Bread Space
+            </div>
+             <!-- Username -->
+             <div class="username-div">
+                <input class="username" type="text" placeholder="Username" style="width: 200px;">
+                <img class="user" src="/image/user.png" alt="">
+            </div>
+            <!-- Password -->
+            <div class="password-div">
+                <input class="password" id="myPass" type="password" placeholder="Password" style="width: 200px;"> 
+                <div class="check-box-show-pass">
+                    <input class="check-b" type="checkbox" onclick="showPassFuntion()">Show Password
+                    <img  class="pass" src="/image/lock.png" alt=""> 
+                </div>
+            </div>
+            <!-- Don't hae account -->
+            <div class="-dont-have-acc-div">
+                <p >Don't have account,</p>
+                <a class="sign-up-link" href="/DangKy/DangKy.html">Sign up</a>
+            </div>
+            <!-- Button -->
+            <div class="login-btn">
+                <button class="btn" type="submit">Log In</button>
+            </div>
+        </div>
+    </div>
+    <script src="/DangNhap/DangNhap.js"></script>
+</body>
+</html>
