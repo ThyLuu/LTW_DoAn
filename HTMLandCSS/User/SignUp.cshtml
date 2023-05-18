@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+}
+@* Sign Up *@
+
+<link href="~/CSS/SignUp.css" rel="stylesheet"/>
+
+<div class="background">
+    <div class="brand-background">
+        <h1 class="bread-space">Bread Space </h1>
+    </div>
+
+    <div class="info">
+        <!-- Sign Up -->
+        <div class="sign-up">
+            Sign Up
+        </div>
+        <!-- Create account -->
+        <div class="create-acc">
+            Create account
+        </div>
+
+        <form action="SignUp" method="post">
+            <!-- Fulls name -->
+            <div class="full-name-div">
+                <input class="full-name" name="fullname" type="text" placeholder="Fullname" />
+            </div>
+            <!-- Email name -->
+            <div class="email-div">
+                <input class="email" name="email" type="text" placeholder="Email">
+            </div>
+            <!-- Username -->
+            <div class="username-div">
+                <input class="username" name="username" type="text" placeholder="Username">
+                <!-- <img class="user" src="/image/user.png" alt=""> -->
+            </div>
+            <!-- Password -->
+            <div class="password-div">
+                <input class="password" name="password" type="password" placeholder="Password">
+                <!-- <img class="pass" src="/image/lock.png" alt=""> -->
+            </div>
+
+            <!-- Have account -->
+            <div class="have-acc-div">
+                <p>Have account,</p>
+                <a class="login-link" href="~/User/LogIn">Login</a> <!-- target = "_blank" -> chuyển tag mới  -->
+            </div>
+
+            <!-- Button -->
+            <div class="create-btn">
+                <button class="btn" type="submit">Create</button>
+            </div>
+        </form>
+        
+    </div>
+</div>    

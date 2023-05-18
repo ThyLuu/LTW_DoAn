@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<link href="~/CSS/LogIn.css" rel="stylesheet" />
+
+<div class="background">
+    <div class="brand-background">
+        <h1 class="bread-space">Bread Space</h1>
+    </div>
+
+    <div class="info">
+        <!-- Log In -->
+        <div class="log-in">
+            Log In
+        </div>
+        <div class="welcome">
+            Welcom to Bread Space
+        </div>
+        <form action="LogIn" method="post">
+            <!-- Username -->
+            <div class="username-div">
+                <input class="username" name="username" type="text" placeholder="Username">
+                <!-- <img class="user" src="/image/user.png" alt=""> -->
+            </div>
+            <!-- Password -->
+            <div class="password-div">
+                <input class="password" name="password" id="myPass" type="password" placeholder="Password">
+                <!-- <img class="pass" src="/image/lock.png" alt=""> -->
+
+            </div>
+            <!-- Don't hae account -->
+            <div class="-dont-have-acc-div">
+                <p>Don't have account,</p>
+                <a class="sign-up-link" href="~/User/SignUp">Sign up</a>
+            </div>
+
+            <!-- Button -->
+            <div class="login-btn">
+                <button class="btn">Log In</button>
+            </div>
+        </form>
+    </div>
+</div>
